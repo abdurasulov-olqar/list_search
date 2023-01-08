@@ -5,7 +5,7 @@ def find_min_even(data):
         data: list of numbers
     returns: minimum even number in the list
     """
-    m = data[0]
+    m = max(data)
     for i in data:
         if m > i and i%2 == 0:
             m = i
