@@ -9,6 +9,9 @@ def find_min_even(data):
     for i in data:
         if m > i and i%2 == 0:
             m = i
-    return m
+    if m%2 ==0:
+        return m
+    else:
+        return -1
 
 
