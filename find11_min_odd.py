@@ -5,8 +5,11 @@ def find_min_odd(data):
         data: list of numbers
     returns: minimum odd number in the list
     """
-    m = data[0]
+    m = max(data)
     for i in data:
         if m > i and i % 2 == 1:
             m = i
-    return m
+    if m % 2 ==1:
+        return m
+    else:
+        return -1
