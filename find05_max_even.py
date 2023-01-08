@@ -7,6 +7,6 @@ def find_max_even(data):
     """
     m = data[0]
     for i in data:
-        if m<i and i % 2 == 0:
+        if m<=i and i % 2 == 0:
             m = i
     return m
